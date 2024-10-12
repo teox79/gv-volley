@@ -31,7 +31,7 @@ const Gyms: React.FC<IGymsProps> = ({ id }) => {
                                     <div className="ci-address">
                                         <h5>Giorni e orario allenamenti</h5>
                                         <ul>
-                                            {gym.trainingSchedule.map((training, index) => (
+                                            {gym.trainingSchedule.map((training) => (
                                                 <li>{training.day} dalle {training.timeStart} alle {training.timeEnd}</li>
                                             ))}
                                         </ul>

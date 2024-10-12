@@ -5,10 +5,6 @@ import MatchSection from '../components/MatchSection';
 import TrendingNewsSection from '../components/TrendingNewsSection';
 import { useAppContext } from '../state/AppContext';
 import { getCurrentMonthNews, getLastMatchesForTeams, getNextMatchesForTeams } from '../utils/Utility';
-import { INewsItem, INewsItemsByMonth } from '../types/News';
-
-
-
 
 const Home: React.FC = () => {
     const { matches, news } = useAppContext();

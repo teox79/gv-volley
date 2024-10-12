@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@types/owl.carousel": "^2.3.6",
     "@types/react-router-dom": "^5.3.3",
     "bootstrap": "^5.3.3",
     "classnames": "^2.5.1",

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar, Nav, Container, Row, Col, NavDropdown } from 'react-bootstrap';
-import { FaFacebook, FaVimeo, FaTwitter, FaGooglePlusG, FaInstagram, FaBars, FaSearch } from 'react-icons/fa';
+import { FaFacebook, FaVimeo, FaTwitter, FaGooglePlusG, FaInstagram, FaBars } from 'react-icons/fa';
 import DynamicTimeDisplay from '../common/DynamicTimeDisplay';
 import { useLocation } from 'react-router-dom';
 

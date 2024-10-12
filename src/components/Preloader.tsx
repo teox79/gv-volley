@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Spinner } from 'react-bootstrap';
 import '../assets/css/Preloader.css'; // Se hai bisogno di stili aggiuntivi
 
 const Preloader: React.FC = () => {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Offcanvas, Button, ListGroup } from 'react-bootstrap';
-import { FaFacebook, FaVimeo, FaTwitter, FaGooglePlusG, FaInstagram, FaTimes, FaSearch } from 'react-icons/fa';
+import { FaFacebook, FaVimeo, FaTwitter, FaGooglePlusG, FaInstagram } from 'react-icons/fa';
 
 const OffcanvasMenu: React.FC = () => {
     const [show, setShow] = useState<boolean>(false);

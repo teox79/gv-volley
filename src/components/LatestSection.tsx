@@ -3,14 +3,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { useAppContext } from '../state/AppContext';
 import { getTeamFlag } from '../utils/Utility';
 
-// Definisci un'interfaccia per l'elemento di notizia
-interface NewsItem {
-    title: string;
-    date: string;
-    comments: number;
-    image: string;
-}
-
 
 const LatestSection: React.FC = () => {
     const { teams, ranking } = useAppContext();
