@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import '../../assets/css/HeroSection.css';
+import '../../assets/css/heroSection.css';
 import { IMatch } from '../../types/CalendarType';
 
 interface HeroSectionProps {
