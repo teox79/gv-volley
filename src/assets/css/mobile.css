@@ -1,0 +1,34 @@
+@media (max-width: 768px) {
+    .schedule-text .st-table table tbody tr td.left-team {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    .schedule-text .st-table table tbody tr td.left-team h4 {
+        margin: 0;
+    }
+
+    .schedule-text .st-table table tbody tr td.right-team {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    .schedule-text .st-table table tbody tr td.right-team h4 {
+        margin: 0;
+    }
+
+    .schedule-text .st-table table tbody tr td h4 {
+        line-height: 20px;
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .schedule-text .st-table table tbody tr td.st-option .so-text {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}

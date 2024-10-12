@@ -1,0 +1,90 @@
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    background: #000;
+}
+
+.loader {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    border-radius: 60px;
+    animation: loader 0.8s linear infinite;
+    -webkit-animation: loader 0.8s linear infinite;
+}
+
+
+@keyframes spinnerColorChange {
+    0% {
+        border-color: yellow;
+    }
+
+    50% {
+        border-color: green;
+    }
+
+    100% {
+        border-color: yellow;
+    }
+}
+
+.custom-spinner {
+    animation: spinnerColorChange 0.8s linear infinite;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader-image {
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+}
+
+
+
+
+.div-with-background {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+}
+
+.div-with-background::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Scegli il colore di sfondo con opacità */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    /* Lo mette dietro al contenuto del div */
+}
+
+.div-with-background img {
+    position: relative;
+    z-index: 2;
+    /* Assicura che l'immagine sia sopra lo sfondo */
+}

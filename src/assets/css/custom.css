@@ -1,0 +1,52 @@
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0;
+    vertical-align: 0;
+    content: "";
+    border-top: none;
+}
+
+.dropdown-menu.show {
+    display: block;
+    border-radius: unset;
+}
+
+.dropdown-toggle:hover .dropdown-menu {
+    display: block;
+}
+
+.table>:not(caption)>*>* {
+    padding: unset;
+    color: currentColor;
+    background-color: currentColor;
+    border-bottom-width: unset;
+    box-shadow: none;
+}
+
+.table tr {
+    border-color: unset;
+    border-style: none;
+    border-width: 0;
+}
+
+.table tr td {
+    align-content: center;
+    justify-items: center;
+}
+
+.table.results td {
+    background: none;
+}
+
+table.calendar tr.toBeRescheduled,
+table.calendar tr.toBeRescheduled:hover,
+table.results tr.toBeRescheduled,
+table.results tr.toBeRescheduled:hover {
+    background: #ffcccc !important;
+
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background: #dd1515 !important;
+}
