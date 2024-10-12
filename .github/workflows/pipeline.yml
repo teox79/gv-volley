@@ -27,7 +27,7 @@ jobs:
 
     - name: Build the project
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-      run: npm run build:production
+      run: npm run build
       env:
         GITHUB_REPOSITORY: ${{ github.repository }}
 
