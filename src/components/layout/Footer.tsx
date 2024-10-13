@@ -6,7 +6,7 @@ import { useAppContext } from '../../state/AppContext';
 const Footer: React.FC = () => {
     const { ui } = useAppContext();
     return (
-        <footer className="footer-section set-bg" style={{ backgroundImage: "url('/img/footer-bg-v1.jpg')", backgroundPositionY: "-300px" }}>
+        <footer className="footer-section set-bg" style={{ backgroundImage: "url('img/footer-bg-v1.jpg')", backgroundPositionY: "-300px" }}>
             <Container>
                 <Row>
                     <Col lg={3} md={6}>
