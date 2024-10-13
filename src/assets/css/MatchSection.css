@@ -2,7 +2,7 @@
     padding: 50px 0;
     background-size: cover;
     background-position: center;
-    background-image: url(img/match/match-bg.jpg);
+    background-image: url(/img/match/match-bg.jpg);
 }
 
 .mc-table {
