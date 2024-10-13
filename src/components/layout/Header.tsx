@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Navbar, Nav, Container, Row, Col, NavDropdown } from 'react-bootstrap';
 import { FaFacebook, FaVimeo, FaTwitter, FaGooglePlusG, FaInstagram, FaBars } from 'react-icons/fa';
 import DynamicTimeDisplay from '../common/DynamicTimeDisplay';
-import { useLocation } from 'react-router-dom';
+import { useLocation, NavLink } from 'react-router-dom'; // Importa NavLink
 import { useAppContext } from '../../state/AppContext';
 
 const Header: React.FC = () => {
@@ -67,9 +67,9 @@ const Header: React.FC = () => {
                                 </Navbar.Toggle>
                                 <Navbar.Collapse id="basic-navbar-nav">
                                     <Nav className="me-auto">
-                                        <Nav.Link href="/" className={isActive('/') ? 'active' : ''}>Home</Nav.Link>
-                                        <Nav.Link href="/calendar" className={isActive('/calendar') ? 'active' : ''}>Calendario</Nav.Link>
-                                        <Nav.Link href="/results" className={isActive('/results') ? 'active' : ''}>Risultati</Nav.Link>
+                                        <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Home</NavLink>
+                                        <NavLink to="/calendar" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Calendario</NavLink>
+                                        <NavLink to="/results" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Risultati</NavLink>
                                         <NavDropdown
                                             title="Paleste"
                                             id="gym-nav-dropdown"
@@ -77,13 +77,13 @@ const Header: React.FC = () => {
                                             onMouseEnter={handleMouseEnter}
                                             onMouseLeave={handleMouseLeave}
                                         >
-                                            <NavDropdown.Item href="/gyms/gym_001" className={isActive('/gyms/gym_001') ? 'active' : ''}>Palestra Mariano "Jammonet"</NavDropdown.Item>
-                                            <NavDropdown.Item href="/gyms/gym_002" className={isActive('/gyms/gym_002') ? 'active' : ''}>Palestra Mariano "Dante Alighieri"</NavDropdown.Item>
-                                            <NavDropdown.Item href="/gyms/gym_003" className={isActive('/gyms/gym_003') ? 'active' : ''}>Palestra Paina "Salvo D’Acquisto"</NavDropdown.Item>
+                                            <NavDropdown.Item as={NavLink} to="/gyms/gym_001" className={({ isActive }) => isActive ? 'active' : ''}>Palestra Mariano "Jammonet"</NavDropdown.Item>
+                                            <NavDropdown.Item as={NavLink} to="/gyms/gym_002" className={({ isActive }) => isActive ? 'active' : ''}>Palestra Mariano "Dante Alighieri"</NavDropdown.Item>
+                                            <NavDropdown.Item as={NavLink} to="/gyms/gym_003" className={({ isActive }) => isActive ? 'active' : ''}>Palestra Paina "Salvo D’Acquisto"</NavDropdown.Item>
                                         </NavDropdown>
                                         {/*}
-                                        <Nav.Link href="#">Sport</Nav.Link>
-                                        <Nav.Link href="./contact.html">Contact Us</Nav.Link>
+                                        <NavLink to="#">Sport</NavLink>
+                                        <NavLink to="./contact.html">Contact Us</NavLink>
                                         */}
                                     </Nav>
                                     {/* Search Switch
@@ -102,4 +102,3 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-
