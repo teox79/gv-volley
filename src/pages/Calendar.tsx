@@ -4,7 +4,7 @@ import { getTeamFlag, sortMatchesByDate } from "../utils/Utility";
 import classNames from 'classnames';
 
 const Calendar: React.FC = () => {
-    const { matches, teams } = useAppContext();
+    const { matches, teams, ui } = useAppContext();
 
     const matchesSorted = sortMatchesByDate(matches, 'asc');
 
@@ -26,7 +26,7 @@ const Calendar: React.FC = () => {
                                                     <td className="left-team">
                                                         {/* Bandiere e nome della squadra di casa */}
                                                         <img
-                                                            src={getTeamFlag(match.homeTeamId, teams)} // Bandiera della squadra di casa
+                                                            src={`${ui.globalUi.baseUrl}${getTeamFlag(match.homeTeamId, teams)}`} // Bandiera della squadra di casa
                                                             alt={match.homeTeam}
                                                         />
                                                         <h4>{match.homeTeam}</h4>
@@ -45,7 +45,7 @@ const Calendar: React.FC = () => {
                                                     <td className="right-team">
                                                         {/* Bandiere e nome della squadra ospite */}
                                                         <img
-                                                            src={getTeamFlag(match.awayTeamId, teams)} // Bandiera della squadra ospite
+                                                            src={`${ui.globalUi.baseUrl}${getTeamFlag(match.awayTeamId, teams)}`} // Bandiera della squadra ospite
                                                             alt={match.awayTeam}
                                                         />
                                                         <h4>{match.awayTeam}</h4>

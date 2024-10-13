@@ -12,7 +12,7 @@ interface MatchSectionProps {
 }
 
 const MatchSection: React.FC<MatchSectionProps> = ({ nextMatches, recentResults }) => {
-    const { teams } = useAppContext();
+    const { teams, ui } = useAppContext();
     return (
         <section className="match-section">
             <Container>
@@ -26,7 +26,7 @@ const MatchSection: React.FC<MatchSectionProps> = ({ nextMatches, recentResults 
                                         <tbody>
                                             <tr>
                                                 <td className="left-team">
-                                                    <img src={getTeamFlag(match.homeTeamId, teams)} alt={match.homeTeam} />
+                                                    <img src={`${ui.globalUi.baseUrl}${getTeamFlag(match.homeTeamId, teams)}`} alt={match.homeTeam} />
                                                     <h6>{match.homeTeam}</h6>
                                                 </td>
                                                 <td className="mt-content">
@@ -35,7 +35,7 @@ const MatchSection: React.FC<MatchSectionProps> = ({ nextMatches, recentResults 
                                                     <div className="mc-op">{match.time}</div>
                                                 </td>
                                                 <td className="right-team">
-                                                    <img src={getTeamFlag(match.awayTeamId, teams)} alt={match.awayTeam} />
+                                                    <img src={`${ui.globalUi.baseUrl}${getTeamFlag(match.awayTeamId, teams)}`} alt={match.awayTeam} />
                                                     <h6>{match.awayTeam}</h6>
                                                 </td>
                                             </tr>
@@ -54,7 +54,7 @@ const MatchSection: React.FC<MatchSectionProps> = ({ nextMatches, recentResults 
                                         <tbody>
                                             <tr>
                                                 <td className="left-team">
-                                                    <img src={getTeamFlag(match.homeTeamId, teams)} alt={match.homeTeam} />
+                                                    <img src={`${ui.globalUi.baseUrl}${getTeamFlag(match.homeTeamId, teams)}`} alt={match.homeTeam} />
                                                     <h6>{match.homeTeam}</h6>
                                                 </td>
                                                 <td className="mt-content">
@@ -64,7 +64,7 @@ const MatchSection: React.FC<MatchSectionProps> = ({ nextMatches, recentResults 
 
                                                 </td>
                                                 <td className="right-team">
-                                                    <img src={getTeamFlag(match.awayTeamId, teams)} alt={match.awayTeam} />
+                                                    <img src={`${ui.globalUi.baseUrl}${getTeamFlag(match.awayTeamId, teams)}`} alt={match.awayTeam} />
                                                     <h6>{match.awayTeam}</h6>
                                                 </td>
                                             </tr>

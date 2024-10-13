@@ -9,6 +9,8 @@ import { INewsItemsByMonth } from '../types/News';
 import { newsItemsData } from '../data/news';
 import { IGymInfo } from '../types/Gyms';
 import { gymsData } from '../data/gyms';
+import { IManageUiData } from '../types/ManageUi';
+import { uiData } from '../data/manageui';
 
 // Definisci il tipo per il contesto generale
 interface AppContextType {
@@ -22,6 +24,8 @@ interface AppContextType {
     setNews: React.Dispatch<React.SetStateAction<INewsItemsByMonth>>;
     gyms: IGymInfo[];
     setGyms: React.Dispatch<React.SetStateAction<IGymInfo[]>>;
+    ui: IManageUiData;
+    setUi: React.Dispatch<React.SetStateAction<IManageUiData>>;
 }
 
 // Crea il contesto con un valore di default
@@ -34,9 +38,10 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
     const [ranking, setRanking] = useState<IRanking[]>(rankingData);
     const [news, setNews] = useState<INewsItemsByMonth>(newsItemsData);
     const [gyms, setGyms] = useState<IGymInfo[]>(gymsData);
+    const [ui, setUi] = useState<IManageUiData>(uiData);
 
     return (
-        <AppContext.Provider value={{ matches, setMatches, teams, setTeams, ranking, setRanking, news, setNews, gyms, setGyms }}>
+        <AppContext.Provider value={{ matches, setMatches, teams, setTeams, ranking, setRanking, news, setNews, gyms, setGyms, ui, setUi }}>
             {children}
         </AppContext.Provider>
     );

@@ -7,7 +7,7 @@ import classNames from 'classnames';
 
 const Results: React.FC = () => {
 
-    const { matches, teams } = useAppContext();
+    const { matches, teams, ui } = useAppContext();
     const teamIds = ["PVI-A01", "PVI-M02"];
     const matchesSorted = sortMatchesByDate(matches, 'asc');
     const filteredMatches = filtersForTeams(matchesSorted, teamIds);
@@ -48,7 +48,7 @@ const Results: React.FC = () => {
                                                     <tr key={index} className={classNameTr}>
                                                         <td className="left-team">
                                                             <img
-                                                                src={getTeamFlag(match.homeTeamId, teams)}
+                                                                src={`${ui.globalUi.baseUrl}${getTeamFlag(match.homeTeamId, teams)}`}
                                                                 alt={match.homeTeam}
                                                             />
                                                             <h4>{match.homeTeam}</h4>
@@ -56,7 +56,7 @@ const Results: React.FC = () => {
                                                         <ResultsMatchRow match={match} />
                                                         <td className="right-team">
                                                             <img
-                                                                src={getTeamFlag(match.awayTeamId, teams)}
+                                                                src={`${ui.globalUi.baseUrl}${getTeamFlag(match.awayTeamId, teams)}`}
                                                                 alt={match.homeTeam}
                                                             />
                                                             <h4>{match.awayTeam}</h4>

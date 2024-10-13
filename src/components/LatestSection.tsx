@@ -5,7 +5,7 @@ import { getTeamFlag } from '../utils/Utility';
 
 
 const LatestSection: React.FC = () => {
-    const { teams, ranking } = useAppContext();
+    const { teams, ranking, ui } = useAppContext();
     const [activeTab, setActiveTab] = useState('Invernale');
     const currentRanking = activeTab === 'Invernale' ? ranking : [];
 
@@ -50,7 +50,7 @@ const LatestSection: React.FC = () => {
                                             {/* Nome della squadra e immagine */}
                                             <td className="team-name">
                                                 <div style={{ display: 'flex', alignItems: 'center' }}>
-                                                    <img src={getTeamFlag(team.id, teams)} alt={team.squadra} style={{ width: '40px', marginRight: '10px' }} />
+                                                    <img src={`${ui.globalUi.baseUrl}${getTeamFlag(team.id, teams)}`} alt={team.squadra} style={{ width: '40px', marginRight: '10px' }} />
                                                     <span>{team.squadra}</span>
                                                 </div>
                                             </td>

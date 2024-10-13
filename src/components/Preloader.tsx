@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import '../assets/css/Preloader.css'; // Se hai bisogno di stili aggiuntivi
+import { useAppContext } from '../state/AppContext';
 
 const Preloader: React.FC = () => {
     const [loading, setLoading] = useState<boolean>(true);
+    const { ui } = useAppContext();
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -28,7 +30,7 @@ const Preloader: React.FC = () => {
 
     return (
         <div id="preloader1" className="div-with-background">
-            <img src="/img/loader.png" alt="Loading" className="loader-image" />
+            <img src={`${ui.globalUi.baseUrl}img/loader.png`} alt="Loading" className="loader-image" />
         </div>
     );
 };

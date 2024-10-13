@@ -3,10 +3,12 @@ import { Navbar, Nav, Container, Row, Col, NavDropdown } from 'react-bootstrap';
 import { FaFacebook, FaVimeo, FaTwitter, FaGooglePlusG, FaInstagram, FaBars } from 'react-icons/fa';
 import DynamicTimeDisplay from '../common/DynamicTimeDisplay';
 import { useLocation } from 'react-router-dom';
+import { useAppContext } from '../../state/AppContext';
 
 const Header: React.FC = () => {
 
     const [showDropdown, setShowDropdown] = useState(false);
+    const { ui } = useAppContext();
     const location = useLocation();
 
     const handleMouseEnter = () => {
@@ -54,7 +56,7 @@ const Header: React.FC = () => {
                         <Col lg={2}>
                             <div className="logo">
                                 <a href="/">
-                                    <img src="/img/logo/logo_v1.png" alt="Logo" width="100px" />
+                                    <img src={`${ui.globalUi.baseUrl}img/logo/logo_v1.png`} alt="Logo" width="100px" />
                                 </a>
                             </div>
                         </Col>

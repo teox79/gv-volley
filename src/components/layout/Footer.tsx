@@ -1,8 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaEnvelope, FaCopy, FaThumbtack, FaFacebook, FaTwitter, FaTumblr, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { useAppContext } from '../../state/AppContext';
 
 const Footer: React.FC = () => {
+    const { ui } = useAppContext();
     return (
         <footer className="footer-section set-bg" style={{ backgroundImage: "url('/img/footer-bg-v1.jpg')", backgroundPositionY: "-300px" }}>
             <Container>
@@ -10,7 +12,7 @@ const Footer: React.FC = () => {
                     <Col lg={3} md={6}>
                         <div className="fs-logo">
                             <div className="logo">
-                                <a href="/"><img src="/img/logo/logo_v1.png" width="100px" alt="gv vlley Logo" /></a>
+                                <a href="/"><img src={`${ui.globalUi.baseUrl}img/logo/logo_v1.png`} width="100px" alt="gv vlley Logo" /></a>
                             </div>
                             <ul style={{ display: "none" }}>
                                 <li><FaEnvelope /> Info.colorlib@gmail.com</li>
