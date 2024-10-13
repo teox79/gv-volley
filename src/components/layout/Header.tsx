@@ -51,9 +51,7 @@ const Header: React.FC = () => {
                     <Row>
                         <Col lg={2}>
                             <div className="logo">
-                                <a href="/">
-                                    <img src={`${ui.globalUi.baseUrl}img/logo/logo_v1.png`} alt="Logo" width="100px" />
-                                </a>
+                                <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}><img src={`${ui.globalUi.baseUrl}img/logo/logo_v1.png`} alt="Logo" width="100px" /></NavLink>
                             </div>
                         </Col>
                         <Col lg={10} >
