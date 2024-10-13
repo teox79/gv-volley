@@ -2,15 +2,13 @@ import React, { useState } from 'react';
 import { Navbar, Nav, Container, Row, Col, NavDropdown } from 'react-bootstrap';
 import { FaFacebook, FaVimeo, FaTwitter, FaGooglePlusG, FaInstagram, FaBars } from 'react-icons/fa';
 import DynamicTimeDisplay from '../common/DynamicTimeDisplay';
-import { useLocation, NavLink } from 'react-router-dom'; // Importa NavLink
+import { NavLink } from 'react-router-dom'; // Importa NavLink
 import { useAppContext } from '../../state/AppContext';
 
 const Header: React.FC = () => {
 
     const [showDropdown, setShowDropdown] = useState(false);
     const { ui } = useAppContext();
-    const location = useLocation();
-
     const handleMouseEnter = () => {
         setShowDropdown(true);
     };
@@ -18,8 +16,6 @@ const Header: React.FC = () => {
     const handleMouseLeave = () => {
         setShowDropdown(false);
     };
-
-    //const isActive = (path: string) => location.pathname === path;
 
 
     return (
