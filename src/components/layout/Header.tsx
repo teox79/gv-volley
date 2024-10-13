@@ -19,7 +19,7 @@ const Header: React.FC = () => {
         setShowDropdown(false);
     };
 
-    const isActive = (path: string) => location.pathname === path;
+    //const isActive = (path: string) => location.pathname === path;
 
 
     return (
@@ -77,9 +77,9 @@ const Header: React.FC = () => {
                                             onMouseEnter={handleMouseEnter}
                                             onMouseLeave={handleMouseLeave}
                                         >
-                                            <NavDropdown.Item as={NavLink} to="/gyms/gym_001" className={({ isActive }) => isActive ? 'active' : ''}>Palestra Mariano "Jammonet"</NavDropdown.Item>
-                                            <NavDropdown.Item as={NavLink} to="/gyms/gym_002" className={({ isActive }) => isActive ? 'active' : ''}>Palestra Mariano "Dante Alighieri"</NavDropdown.Item>
-                                            <NavDropdown.Item as={NavLink} to="/gyms/gym_003" className={({ isActive }) => isActive ? 'active' : ''}>Palestra Paina "Salvo D’Acquisto"</NavDropdown.Item>
+                                            <NavDropdown.Item as={NavLink} to="/gyms/gym_001" >Palestra Mariano "Jammonet"</NavDropdown.Item>
+                                            <NavDropdown.Item as={NavLink} to="/gyms/gym_002" >Palestra Mariano "Dante Alighieri"</NavDropdown.Item>
+                                            <NavDropdown.Item as={NavLink} to="/gyms/gym_003" >Palestra Paina "Salvo D’Acquisto"</NavDropdown.Item>
                                         </NavDropdown>
                                         {/*}
                                         <NavLink to="#">Sport</NavLink>
