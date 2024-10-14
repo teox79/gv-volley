@@ -18,6 +18,9 @@ const TrendingNewsSection: React.FC<TrendingNewsProps> = ({ newsItems }) => {
         autoplay: true,
         autoplaySpeed: 6000,
         arrows: true,
+        //fade: true,
+        //cssEase: 'linear', // Tipo di transizione
+        //speed: 5000, // Velocità della transizione
     };
 
     const currentMonth = getMonthNameFromDate();

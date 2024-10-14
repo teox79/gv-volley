@@ -556,6 +556,13 @@ ol {
 	position: relative;
 }
 
+/* Media query per schermi piccoli (mobile) */
+@media (max-width: 768px) {
+	.hero-section {
+		height: auto;
+	}
+}
+
 
 .hero-section::before {
 	content: '';
@@ -594,7 +601,7 @@ ol {
 .trending-news-section {
 	background: #151618;
 	position: relative;
-	padding: 18px 0;
+	padding: 18px;
 }
 
 .trending-news-section .tn-title {

@@ -32,13 +32,13 @@ const LatestSection: React.FC = () => {
                                         <th className="th-o">Pos</th>
                                         <th>Team</th>
                                         <th className="th-o">Punti</th>
-                                        <th className="th-o">Partite giocate</th>
-                                        <th className="th-o">Partite vinte</th>
-                                        <th className="th-o">Set vinti</th>
-                                        <th className="th-o">Set persi</th>
-                                        <th className="th-o">Quoziente set</th>
-                                        <th className="th-o">Quoziente punti</th>
-                                        <th className="th-o">Penalità</th>
+                                        <th className="th-o th-o d-none d-lg-table-cell">Partite giocate</th>
+                                        <th className="th-o th-o d-none d-lg-table-cell">Partite vinte</th>
+                                        <th className="th-o d-none d-lg-table-cell">Set vinti</th>
+                                        <th className="th-o d-none d-lg-table-cell">Set persi</th>
+                                        <th className="th-o d-none d-lg-table-cell">Quoziente set</th>
+                                        <th className="th-o d-none d-lg-table-cell">Quoziente punti</th>
+                                        <th className="th-o d-none d-lg-table-cell">Penalità</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -57,13 +57,13 @@ const LatestSection: React.FC = () => {
 
                                             {/* Dati classifica */}
                                             <td>{team.punti}</td>
-                                            <td>{team.partiteGiocate}</td>
-                                            <td>{team.partiteVinte}</td>
-                                            <td>{team.setVinti}</td>
-                                            <td>{team.setPersi}</td>
-                                            <td>{team.quozienteSet.toFixed(2)}</td>
-                                            <td>{team.quozientePunti.toFixed(2)}</td>
-                                            <td>{team.penalità}</td>
+                                            <td className="d-none d-lg-table-cell">{team.partiteGiocate}</td>
+                                            <td className="d-none d-lg-table-cell">{team.partiteVinte}</td>
+                                            <td className="d-none d-lg-table-cell">{team.setVinti}</td>
+                                            <td className="d-none d-lg-table-cell">{team.setPersi}</td>
+                                            <td className="d-none d-lg-table-cell">{team.quozienteSet.toFixed(2)}</td>
+                                            <td className="d-none d-lg-table-cell">{team.quozientePunti.toFixed(2)}</td>
+                                            <td className="d-none d-lg-table-cell">{team.penalità}</td>
                                         </tr>
                                     ))}
                                     {currentRanking && currentRanking.length === 0 && (

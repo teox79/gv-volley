@@ -75,16 +75,7 @@ const Header: React.FC = () => {
                                             <NavDropdown.Item as={NavLink} to="/gyms/gym_002" >Palestra Mariano "Dante Alighieri"</NavDropdown.Item>
                                             <NavDropdown.Item as={NavLink} to="/gyms/gym_003" >Palestra Paina "Salvo D’Acquisto"</NavDropdown.Item>
                                         </NavDropdown>
-                                        {/*}
-                                        <NavLink to="#">Sport</NavLink>
-                                        <NavLink to="./contact.html">Contact Us</NavLink>
-                                        */}
                                     </Nav>
-                                    {/* Search Switch
-                                    <div className="nm-right search-switch">
-                                        <FaSearch />
-                                    </div>
-                                     */}
                                 </Navbar.Collapse>
                             </Navbar>
                         </Col>

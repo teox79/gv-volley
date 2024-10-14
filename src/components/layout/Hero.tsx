@@ -29,9 +29,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ nextMatches }) => {
                                         <Col lg={12} style={{ marginTop: "10px" }} key={`hero_${index}`}>
                                             <div className="hs-text">
                                                 <h4>{match.date}</h4>
-                                                <h2 style={{
-                                                    fontSize: "36px"
-                                                }}>{match.homeTeam} <span style={{ color: "red" }} > VS</span> {match.awayTeam}</h2>
+                                                <h2 className='responsive-heading'>{match.homeTeam} <span style={{ color: "red" }} > VS</span> {match.awayTeam}</h2>
                                                 < Button href={''} className="primary-btn" style={{ display: "none" }}>
                                                     Info
                                                 </Button>

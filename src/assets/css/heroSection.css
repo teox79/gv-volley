@@ -1,0 +1,11 @@
+.responsive-heading {
+    font-size: 18px !important;
+    /* Default per mobile */
+}
+
+@media (min-width: 992px) {
+    .responsive-heading {
+        font-size: 36px !important;
+        /* Dimensione per schermi più grandi */
+    }
+}
