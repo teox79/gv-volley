@@ -6,7 +6,7 @@ export interface IRanking {
     partiteVinte: number;
     setVinti: number;
     setPersi: number;
-    quozienteSet: number;
+    quozienteSet: number | string;
     quozientePunti: number;
     penalità: number;
 }

@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useAppContext } from '../state/AppContext';
-import { getTeamFlag } from '../utils/Utility';
+import { getTeamFlag, sortRankingData } from '../utils/Utility';
 
 
 const LatestSection: React.FC = () => {
     const { teams, ranking, ui } = useAppContext();
     const [activeTab, setActiveTab] = useState('Invernale');
     const currentRanking = activeTab === 'Invernale' ? ranking : [];
+    const sortData = sortRankingData(currentRanking);
 
     return (
         <section className="latest-section">
@@ -42,7 +43,7 @@ const LatestSection: React.FC = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {currentRanking.map((team, index) => (
+                                    {sortData.map((team, index) => (
                                         <tr key={team.id}>
                                             {/* Posizione */}
                                             <td>{index + 1}</td>
@@ -61,8 +62,8 @@ const LatestSection: React.FC = () => {
                                             <td className="d-none d-lg-table-cell">{team.partiteVinte}</td>
                                             <td className="d-none d-lg-table-cell">{team.setVinti}</td>
                                             <td className="d-none d-lg-table-cell">{team.setPersi}</td>
-                                            <td className="d-none d-lg-table-cell">{team.quozienteSet.toFixed(2)}</td>
-                                            <td className="d-none d-lg-table-cell">{team.quozientePunti.toFixed(2)}</td>
+                                            <td className="d-none d-lg-table-cell">{team.quozienteSet}</td>
+                                            <td className="d-none d-lg-table-cell">{team.quozientePunti}</td>
                                             <td className="d-none d-lg-table-cell">{team.penalità}</td>
                                         </tr>
                                     ))}

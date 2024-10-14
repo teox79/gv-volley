@@ -1,5 +1,6 @@
 import { IMatch } from "../types/CalendarType";
 import { INewsItem, INewsItemsByMonth } from "../types/News";
+import { IRanking } from "../types/RankingType";
 import { ITeam } from "../types/TeamsType";
 
 // Funzione per ottenere la bandiera della squadra in base all'ID
@@ -138,4 +139,28 @@ export const filtersForTeams = (matches: IMatch[], teamIds: string[],): IMatch[]
     }
 
     return filteredMatches
+};
+
+
+export const sortRankingData = (data: IRanking[]) => {
+    return data.sort((a, b) => {
+        // Ordina per Partite Giocate (decrescente)
+        if (b.partiteGiocate !== a.partiteGiocate) {
+            return b.partiteGiocate - a.partiteGiocate;
+        }
+        // Ordina per Punti (decrescente)
+        if (b.punti !== a.punti) {
+            return b.punti - a.punti;
+        }
+        // Ordina per Partite Vinte (decrescente)
+        if (b.partiteVinte !== a.partiteVinte) {
+            return b.partiteVinte - a.partiteVinte;
+        }
+        // Ordina per Set Vinti (decrescente)
+        if (b.setVinti !== a.setVinti) {
+            return b.setVinti - a.setVinti;
+        }
+        // Ordina per Set Persi (decrescente)
+        return b.setPersi - a.setPersi;
+    });
 };
