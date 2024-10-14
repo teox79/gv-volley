@@ -837,14 +837,20 @@ ol {
 	padding-top: 70px;
 }
 
+.section-title {
+	display: flex;
+	justify-content: space-between;
+}
+
+
 .section-title.latest-title h3,
 .section-title h3 {
-	float: left;
+	/*float: left;*/
 }
 
 .section-title.latest-title ul,
 .section-title ul {
-	text-align: right;
+	/*text-align: right;*/
 }
 
 .section-title.latest-title ul li,
@@ -2685,6 +2691,8 @@ ol {
 	.left-blog-pad {
 		padding-right: 15px;
 	}
+
+
 }
 
 /* Large Mobile: 480px */
@@ -2880,5 +2888,29 @@ ol {
 
 	.blog-hero-section {
 		height: 410px;
+	}
+
+	.section-title {
+		flex-direction: column;
+		row-gap: 10px;
+	}
+
+	.ms-content .mc-table table tr td.right-team {
+		padding-right: 0;
+	}
+
+	.ms-content .mc-table table tr td.left-team {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.ms-content .mc-table table tr td.left-team img {
+		margin-right: 0;
+		width: 30px;
+	}
+
+	.ms-content .mc-table table tr td.right-team img {
+		margin-left: 0;
+		width: 30px;
 	}
 }
