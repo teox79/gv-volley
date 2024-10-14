@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Offcanvas, ListGroup, NavDropdown } from 'react-bootstrap';
-import { FaFacebook, FaVimeo, FaTwitter, FaGooglePlusG, FaInstagram, FaChevronDown, FaChevronRight } from 'react-icons/fa';
+import { Offcanvas, ListGroup } from 'react-bootstrap';
+import { FaChevronDown, FaChevronRight } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
 const OffcanvasMenu: React.FC = () => {
