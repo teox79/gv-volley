@@ -1,12 +1,14 @@
 import { useAppContext } from "../state/AppContext";
 import { IMatch } from "../types/CalendarType";
-import { getTeamFlag, sortMatchesByDate } from "../utils/Utility";
+import { filtersForTeams, getTeamFlag, sortMatchesByDate } from "../utils/Utility";
 import classNames from 'classnames';
 
 const Calendar: React.FC = () => {
     const { matches, teams, ui } = useAppContext();
 
     const matchesSorted = sortMatchesByDate(matches, 'asc');
+    const teamIds = ["PVI-A01", "PVI-M02"];
+    const matchesFiltered = filtersForTeams(matchesSorted, teamIds);
 
 
     return (
@@ -19,7 +21,7 @@ const Calendar: React.FC = () => {
                             <div className="st-table">
                                 <table className="calendar">
                                     <tbody>
-                                        {matchesSorted.map((match: IMatch, index: number) => {
+                                        {matchesFiltered.map((match: IMatch, index: number) => {
                                             const classNameTr = classNames({ toBeRescheduled: match.toBeRescheduled });
                                             return (
                                                 <tr key={index} className={classNameTr}>
