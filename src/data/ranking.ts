@@ -4,13 +4,13 @@ export const rankingData: IRanking[] = [
     {
         "id": "PVI-M02",
         "squadra": "PVI ARDOR2K MARIANO",
-        "punti": 0,
-        "partiteGiocate": 0,
-        "partiteVinte": 0,
-        "setVinti": 0,
-        "setPersi": 0,
-        "quozienteSet": 0.00,
-        "quozientePunti": 0.00,
+        "punti": 4,
+        "partiteGiocate": 1,
+        "partiteVinte": 2,
+        "setVinti": 3,
+        "setPersi": 2,
+        "quozienteSet": 1.50,
+        "quozientePunti": 0.93,
         "penalità": 0
     },
     {
@@ -28,13 +28,13 @@ export const rankingData: IRanking[] = [
     {
         "id": "PRO-02",
         "squadra": "PRO VICTORIA AZZURRA",
-        "punti": 0,
-        "partiteGiocate": 0,
+        "punti": 3,
+        "partiteGiocate": 1,
         "partiteVinte": 0,
         "setVinti": 0,
-        "setPersi": 0,
-        "quozienteSet": 0.00,
-        "quozientePunti": 0.00,
+        "setPersi": 3,
+        "quozienteSet": 0.67,
+        "quozientePunti": 1.08,
         "penalità": 0
     },
     {
