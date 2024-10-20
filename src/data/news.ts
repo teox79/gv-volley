@@ -43,12 +43,12 @@ export const newsItemsData: INewsItemsByMonth = {
             "description": "Ricordiamo allenamenti presso la palestra JEAN MONNET dalle 17:00 alle 19:00"
         },
         {
-            "date": "27/10/2024",
-            "description": "PVI ARDOR2K AROSIO VS ORATORIO CESATE POC"
+            "date": "26/10/2024",
+            "description": "PVI LA RETE DI EMMA ARDOR2K MARIANO VS ORATORIO CESATE POC"
         },
         {
             "date": "27/10/2024",
-            "description": "PVI ARDOR2K MARIANO VS PRO VICTORIA AZZURRA"
+            "description": "PVI LA RETE DI EMMA ARDOR2K AROSIO VS L'ARCA VOLLEY"
         },
         {
             "date": "28/10/2024",
