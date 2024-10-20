@@ -3,7 +3,7 @@ import { ITeam } from "../types/TeamsType";
 export const teamsData: ITeam[] = [
     {
         "id": "PVI-A01",
-        "name": "PVI ARDOR2K AROSIO",
+        "name": "PVI LA RETE DI EMMA ARDOR2K AROSIO",
         "flag": "img/flag/gialle.png",
         "address": "PALAZZETTO DELLO SPORT - VIA BUONARROTI 6 - AROSIO"
     },
@@ -15,7 +15,7 @@ export const teamsData: ITeam[] = [
     },
     {
         "id": "PVI-M02",
-        "name": "PVI ARDOR2K MARIANO",
+        "name": "PVI LA RETE DI EMMA ARDOR2K MARIANO",
         "flag": "img/flag/verdi.png",
         "address": "PALESTRA SCUOLE - VIA DEI VIVAI 12 - MARIANO COMENSE"
     },

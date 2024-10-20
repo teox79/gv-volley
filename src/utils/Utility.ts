@@ -145,9 +145,9 @@ export const filtersForTeams = (matches: IMatch[], teamIds: string[],): IMatch[]
 export const sortRankingData = (data: IRanking[]) => {
     return data.sort((a, b) => {
         // Ordina per Partite Giocate (decrescente)
-        if (b.partiteGiocate !== a.partiteGiocate) {
+        /*if (b.partiteGiocate !== a.partiteGiocate) {
             return b.partiteGiocate - a.partiteGiocate;
-        }
+        }*/
         // Ordina per Punti (decrescente)
         if (b.punti !== a.punti) {
             return b.punti - a.punti;
@@ -164,3 +164,11 @@ export const sortRankingData = (data: IRanking[]) => {
         return b.setPersi - a.setPersi;
     });
 };
+
+export const getFutureMatches = (matches: IMatch[]) => {
+    const today = new Date();
+    return matches.filter(match => {
+        const matchDate = new Date(match.date.split("/").reverse().join("-")); // Converte la data nel formato YYYY-MM-DD
+        return matchDate > today;
+    });
+}

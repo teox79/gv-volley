@@ -1,6 +1,6 @@
 import { useAppContext } from "../state/AppContext";
 import { IMatch } from "../types/CalendarType";
-import { filtersForTeams, getTeamFlag, sortMatchesByDate } from "../utils/Utility";
+import { filtersForTeams, getFutureMatches, getTeamFlag, sortMatchesByDate } from "../utils/Utility";
 import classNames from 'classnames';
 
 const Calendar: React.FC = () => {
@@ -9,7 +9,7 @@ const Calendar: React.FC = () => {
     const matchesSorted = sortMatchesByDate(matches, 'asc');
     const teamIds = ["PVI-A01", "PVI-M02"];
     const matchesFiltered = filtersForTeams(matchesSorted, teamIds);
-
+    const futureMatches = getFutureMatches(matchesFiltered);
 
     return (
         <section className="schedule-section spad">
@@ -21,7 +21,7 @@ const Calendar: React.FC = () => {
                             <div className="st-table">
                                 <table className="calendar">
                                     <tbody>
-                                        {matchesFiltered.map((match: IMatch, index: number) => {
+                                        {futureMatches.map((match: IMatch, index: number) => {
                                             const classNameTr = classNames({ toBeRescheduled: match.toBeRescheduled });
                                             return (
                                                 <tr key={index} className={classNameTr}>
