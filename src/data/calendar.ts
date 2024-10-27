@@ -109,7 +109,7 @@ export const calendarData: IMatch[] =
             "homeTeamId": "PVI-M02",
             "awayTeamId": "ORA-05",
             "result": {
-                "homeTeamScore": 0,
+                "homeTeamScore": 5,
                 "awayTeamScore": 0
             },
             "toBeRescheduled": false
