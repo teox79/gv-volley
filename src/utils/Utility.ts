@@ -64,8 +64,9 @@ export const getLastMatchesForTeams = (matches: IMatch[], teamIds: string[], cou
         return [];
     }
 
-    // Ordina le partite per data (dalla più lontana alla più recente)
-    filteredMatches.sort((a, b) => parseDate(a.date).getTime() - parseDate(b.date).getTime());
+    // Ordina le partite per data (dalla più recente alla più lontana)
+    filteredMatches.sort((a, b) => parseDate(b.date).getTime() - parseDate(a.date).getTime());
+
 
     // Restituisce le ultime 'count' partite
     return filteredMatches.slice(0, count);

@@ -142,7 +142,7 @@ export const calendarData: IMatch[] =
             "awayTeamId": "ARC-06",
             "result": {
                 "homeTeamScore": 0,
-                "awayTeamScore": 0
+                "awayTeamScore": 5
             },
             "toBeRescheduled": false
         },

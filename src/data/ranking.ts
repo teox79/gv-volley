@@ -16,13 +16,13 @@ export const rankingData: IRanking[] = [
     {
         "id": "PVI-A01",
         "squadra": "PVI ARDOR2K AROSIO",
-        "punti": 4,
-        "partiteGiocate": 1,
+        "punti": 5,
+        "partiteGiocate": 2,
         "partiteVinte": 1,
         "setVinti": 3,
-        "setPersi": 2,
-        "quozienteSet": 1.50,
-        "quozientePunti": 0.92,
+        "setPersi": 7,
+        "quozienteSet": 0.43,
+        "quozientePunti": 0.67,
         "penalità": 0
     },
     {
@@ -64,13 +64,13 @@ export const rankingData: IRanking[] = [
     {
         "id": "ARC-06",
         "squadra": "L'ARCA VOLLEY",
-        "punti": 12,
-        "partiteGiocate": 2,
-        "partiteVinte": 2,
-        "setVinti": 10,
+        "punti": 18,
+        "partiteGiocate": 3,
+        "partiteVinte": 3,
+        "setVinti": 15,
         "setPersi": 0,
         "quozienteSet": 'Max',
-        "quozientePunti": 1.56,
+        "quozientePunti": 1.71,
         "penalità": 0
     },
 ];

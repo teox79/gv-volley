@@ -14,6 +14,9 @@ const Home: React.FC = () => {
     const lastMatches = getLastMatchesForTeams(matches, teamIds, 2);
     const newsItems = getCurrentMonthNews(news);
 
+
+    console.log(lastMatches);
+
     return (
         <div>
             <Hero nextMatches={nextMatches} />
