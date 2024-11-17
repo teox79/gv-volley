@@ -16,12 +16,12 @@ export const rankingData: IRanking[] = [
     {
         "id": "PVI-A01",
         "squadra": "PVI ARDOR2K AROSIO",
-        "punti": 8,
-        "partiteGiocate": 4,
+        "punti": 9,
+        "partiteGiocate": 5,
         "partiteVinte": 1,
         "setVinti": 4,
-        "setPersi": 16,
-        "quozienteSet": 0.25,
+        "setPersi": 21,
+        "quozienteSet": 0.19,
         "quozientePunti": 0.60,
         "penalità": 0
     },
@@ -51,14 +51,14 @@ export const rankingData: IRanking[] = [
     },
     {
         "id": "SAM-04",
-        "squadra": "SAMPIETRINA VOLL. SEVESO",
-        "punti": 5,
-        "partiteGiocate": 3,
-        "partiteVinte": 0,
-        "setVinti": 2,
+        "squadra": "SAMPIETRINA VOLL. SEVESO *",
+        "punti": 11,
+        "partiteGiocate": 4,
+        "partiteVinte": 1,
+        "setVinti": 7,
         "setPersi": 13,
-        "quozienteSet": 0.15,
-        "quozientePunti": 0.60,
+        "quozienteSet": 0.54,
+        "quozientePunti": 0.78,
         "penalità": 0
     },
     {
