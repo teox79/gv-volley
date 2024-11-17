@@ -53,6 +53,9 @@ const LatestSection: React.FC = () => {
                                                 <div style={{ display: 'flex', alignItems: 'center' }}>
                                                     <img src={`${ui.globalUi.baseUrl}${getTeamFlag(team.id, teams)}`} alt={team.squadra} style={{ width: '40px', marginRight: '10px' }} />
                                                     <span>{team.squadra}</span>
+                                                    {team.id === 'SAM-04' &&
+                                                        <span style={{ color: 'red', marginLeft: '10px', fontSize: '24px', fontWeight: 'bold' }}>!</span>
+                                                    }
                                                 </div>
                                             </td>
 
@@ -74,14 +77,24 @@ const LatestSection: React.FC = () => {
                                     )}
                                 </tbody>
                             </table>
-
+                            <div>
+                                <div style={{
+                                    display: 'flex', gap: '20px', alignItems: 'center', marginTop: '20px'
+                                }}>
+                                    <span style={{ color: 'red', marginLeft: '10px', fontSize: '24px', fontWeight: 'bold' }}>!</span>
+                                    <span style={{ fontWeight: 'bold' }}>
+                                        Le squadre con il punto esclamativo rosso sono fuori classifica e non passano alle fasi finali.
+                                        <br />Le gare giocate contro tali squadre non contano nella classifica avulsa.
+                                    </span>
+                                </div>
+                            </div>
 
                             {/*<a href="#" className="p-all">View All</a>*/}
                         </div>
                     </Col>
                 </Row>
-            </Container>
-        </section>
+            </Container >
+        </section >
     );
 };
 

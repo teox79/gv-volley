@@ -51,7 +51,7 @@ export const rankingData: IRanking[] = [
     },
     {
         "id": "SAM-04",
-        "squadra": "SAMPIETRINA VOLL. SEVESO *",
+        "squadra": "SAMPIETRINA VOLL. SEVESO",
         "punti": 11,
         "partiteGiocate": 4,
         "partiteVinte": 1,
