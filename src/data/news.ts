@@ -146,4 +146,62 @@ export const newsItemsData: INewsItemsByMonth = {
         }
 
     ],
+    "122024": [
+        {
+            "date": "01/12/2024",
+            "description": "PVI LA RETE DI EMMA ARDOR2K AROSIO VS ORATORIO CESATE POC"
+        },
+        {
+            "date": "02/12/2024",
+            "description": "Ricordiamo allenamenti presso la palestra di Paina dalle 17:00 alle 19:00"
+        },
+        {
+            "date": "05/12/2024",
+            "description": "Ricordiamo allenamenti presso la palestra JEAN MONNET dalle 17:00 alle 19:00"
+        },
+        {
+            "date": "06/12/2024",
+            "description": "Ricordiamo allenamenti presso la palestra JEAN MONNET dalle 17:00 alle 19:00"
+        },
+        {
+            "date": "09/12/2024",
+            "description": "Ricordiamo allenamenti presso la palestra di Paina dalle 17:00 alle 19:00"
+        },
+        {
+            "date": "12/12/2024",
+            "description": "Ricordiamo allenamenti presso la palestra JEAN MONNET dalle 17:00 alle 19:00"
+        },
+        {
+            "date": "13/12/2024",
+            "description": "Ricordiamo allenamenti presso la palestra JEAN MONNET dalle 17:00 alle 19:00"
+        },
+        {
+            "date": "14/12/2024",
+            "description": "ORATORIO CESATE POC VS PVI LA RETE DI EMMA ARDOR2K MARIANO"
+        },
+        {
+            "date": "15/12/2024",
+            "description": "L'ARCA VOLLEY VS PVI LA RETE DI EMMA ARDOR2K AROSIO"
+        },
+        {
+            "date": "16/12/2024",
+            "description": "Ricordiamo allenamenti presso la palestra di Paina dalle 17:00 alle 19:00"
+        },
+        {
+            "date": "19/12/2024",
+            "description": "Ricordiamo allenamenti presso la palestra JEAN MONNET dalle 17:00 alle 19:00"
+        },
+        {
+            "date": "20/12/2024",
+            "description": "Ricordiamo allenamenti presso la palestra JEAN MONNET dalle 17:00 alle 19:00"
+        },
+        {
+            "date": "21/12/2024",
+            "description": "PVI LA RETE DI EMMA ARDOR2K MARIANO VS PVI LA RETE DI EMMA ARDOR2K AROSIO"
+        },
+        {
+            "date": "22/12/2024",
+            "description": "CI RIVEDIAMO NEL 2025 BUONE FESTE A TUTTI"
+        },
+    ],
 }
