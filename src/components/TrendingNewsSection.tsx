@@ -30,7 +30,7 @@ const TrendingNewsSection: React.FC<TrendingNewsProps> = ({ newsItems }) => {
         <div className="trending-news-section">
             <Container>
                 <div className="tn-title">
-                    <i className="fa fa-caret-right"></i> News del mese di {currentMonth}
+                    <i className="fa fa-caret-right"></i> News di {currentMonth}
                 </div>
                 <Slider {...settings} className="news-slider">
                     {newsItems.length === 0 && <div className="nt-item">{noNews}</div>}
