@@ -3,7 +3,7 @@ import { IRanking } from "../types/RankingType";
 export const rankingData: IRanking[] = [
     {
         "id": "PVI-M02",
-        "squadra": "PVI ARDOR2K MARIANO",
+        "squadra": "PVI LA RETE DI EMMA ARDOR2K MARIANO",
         "punti": 33,
         "partiteGiocate": 6,
         "partiteVinte": 6,
@@ -15,7 +15,7 @@ export const rankingData: IRanking[] = [
     },
     {
         "id": "PVI-A01",
-        "squadra": "PVI ARDOR2K AROSIO",
+        "squadra": "PVI LA RETE DI EMMA ARDOR2K AROSIO",
         "punti": 11,
         "partiteGiocate": 6,
         "partiteVinte": 1,
