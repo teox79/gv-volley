@@ -130,7 +130,7 @@ export const newsItemsData: INewsItemsByMonth = {
         },
         {
             "date": "25/11/2024",
-            "description": "Ricordiamo allenamenti presso la palestra di Paina dalle 17:00 alle 19:00"
+            "description": "ATTENZIONE !!! non ci sono gli allenamenti per manutenzione al campo"
         },
         {
             "date": "28/11/2024",
