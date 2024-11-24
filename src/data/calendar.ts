@@ -253,8 +253,8 @@ export const calendarData: IMatch[] =
             "homeTeamId": "PRO-02",
             "awayTeamId": "PVI-A01",
             "result": {
-                "homeTeamScore": 1,
-                "awayTeamScore": 4
+                "homeTeamScore": 4,
+                "awayTeamScore": 1
             },
             "toBeRescheduled": false
         },
