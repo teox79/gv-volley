@@ -201,7 +201,66 @@ export const newsItemsData: INewsItemsByMonth = {
         },
         {
             "date": "22/12/2024",
-            "description": "CI RIVEDIAMO NEL 2025 BUONE FESTE A TUTTI"
+            "description": "FESTA DI NATALE - CI RIVEDIAMO NEL 2025 BUONE FESTE A TUTTI"
         },
+    ],
+    "012025": [
+        {
+            "date": "09/01/2025",
+            "description": "Ricordiamo allenamenti presso la palestra di Paina dalle 17:00 alle 19:00"
+        },
+        {
+            "date": "10/01/2025",
+            "description": "Ricordiamo allenamenti presso la palestra di Paina dalle 17:00 alle 19:00"
+        },
+        {
+            "date": "12/01/2025",
+            "description": "PVI LA RETE DI EMMA ARDOR2K AROSIO VS SAMPIETRINA VOLL. SEVESO"
+        },
+        {
+            "date": "12/01/2025",
+            "description": "L'ARCA VOLLEY VS PVI LA RETE DI EMMA ARDOR2K MARIANO"
+        },
+        {
+            "date": "13/01/2025",
+            "description": "Ricordiamo allenamenti presso la palestra JEAN MONNET dalle 17:00 alle 19:00"
+        },
+        {
+            "date": "16/01/2025",
+            "description": "Ricordiamo allenamenti presso la palestra di Paina dalle 17:00 alle 19:00"
+        },
+        {
+            "date": "17/01/2025",
+            "description": "Ricordiamo allenamenti presso la palestra di Paina dalle 17:00 alle 19:00"
+        },
+        {
+            "date": "18/01/2025",
+            "description": "ATTENZIONE !!! RECUPERO ORATORIO CESATE POC VS PVI LA RETE DI EMMA ARDOR2K MARIANO"
+        },
+        {
+            "date": "20/01/2025",
+            "description": "Ricordiamo allenamenti presso la palestra JEAN MONNET dalle 17:00 alle 19:00"
+        },
+        {
+            "date": "23/01/2025",
+            "description": "Ricordiamo allenamenti presso la palestra di Paina dalle 17:00 alle 19:00"
+        },
+        {
+            "date": "24/01/2025",
+            "description": "Ricordiamo allenamenti presso la palestra di Paina dalle 17:00 alle 19:00"
+        },
+        {
+            "date": "27/01/2025",
+            "description": "Ricordiamo allenamenti presso la palestra JEAN MONNET dalle 17:00 alle 19:00"
+        },
+        {
+            "date": "30/01/2025",
+            "description": "Ricordiamo allenamenti presso la palestra di Paina dalle 17:00 alle 19:00"
+        },
+        {
+            "date": "31/01/2025",
+            "description": "Ricordiamo allenamenti presso la palestra di Paina dalle 17:00 alle 19:00"
+        },
+
     ],
 }
